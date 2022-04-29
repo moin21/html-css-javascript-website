@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../css/ContactMe.css" />
+  </head>
+
+  <body>
+    <ul class="topnav">
+      <li>
+        <a href="../html/Introduction.html">Introduction</a>
+      </li>
+      <li><a href="../html/Gallery.html">Pictures Gallery</a></li>
+      <li><a class="active" href="../html/ContactMe.html">Contact Me</a></li>
+      <li><a href="../html/About.html">About</a></li>
+    </ul>
+    <form>
+      <header class="headerContainer">
+        <h1>Fill This Form to Contact</h1>
+      </header>
+
+      <div>
+        <label for="text"> Name : </label>
+        <input
+          type="text"
+          placeholder="Enter your Name"
+          id="text"
+          name="text"
+          required
+        />
+        <error-output class="text-error" for="text"></error-output>
+      </div>
+
+      <div>
+        <label for="pwd"> Password : </label>
+        <input
+          type="password"
+          placeholder="Enter your Password"
+          id="pwd"
+          name="pwd"
+          required
+        />
+        <error-output class="pwd-error" for="pwd"></error-output>
+      </div>
+
+      <div>
+        <label for="email"> Email : </label>
+        <input
+          type="email"
+          placeholder="Enter your Email"
+          id="email"
+          name="email"
+        />
+        <error-output class="email-error" for="email"></error-output>
+      </div>
+
+      <div>
+        <label for="url"> URL : </label>
+        <input type="url" placeholder="Enter your URL" id="url" name="url" />
+      </div>
+
+      <div>
+        <label for="tel"> Mobile Number : </label>
+        <input
+          type="tel"
+          placeholder="Enter your Phone Number"
+          id="tel"
+          name="tel"
+        />
+      </div>
+
+      <div class="nativeDateTimePicker">
+        <label for="party"> Choose Date and Time : </label>
+        <input
+          type="datetime-local"
+          placeholder="Enter date and time"
+          id="party"
+          name="bday"
+        />
+      </div>
+
+      <div>
+        <label for="salary"> Choose Salary from Avaiable Range : </label>
+        300000 <input type="range" placeholder="Enter date and time" id="salary"
+        name=salary" min="300000" max="500000" step="100" value="400000">
+        <output class="salary-output" for="salary">500000</output>
+      </div>
+
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+
+    <script src="../javascript/Forms.js"></script>
+  </body>
+</html>

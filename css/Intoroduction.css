@@ -1,0 +1,77 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+}
+.card img {
+  max-width: 100%;
+}
+.card .text {
+  padding: 0 20px 20px;
+  color: aliceblue;
+  text-align: center;
+}
+.card .text > button {
+  background: gray;
+  border: 0;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 60%;
+  align-items: flex-end;
+  flex-basis: content;
+}
+
+.card {
+  flex: 0 0 300px;
+  margin: 13px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(151, 121, 121, 0.3);
+  align-items: flex-end;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #aa0404;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+body {
+  background-color: rgb(5, 5, 5);
+  color: #ccc;
+}
+h1,
+h5 {
+  text-align: center;
+}

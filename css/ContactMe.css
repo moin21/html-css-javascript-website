@@ -1,0 +1,120 @@
+html,
+input {
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+}
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto;
+  background: rgb(0, 0, 0);
+}
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(92, 94, 100);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding-left: 10%;
+}
+
+form {
+  margin-top: 1em;
+  margin-left: 10em;
+  max-width: 60%;
+  border: 1px solid rgb(167, 164, 164);
+  padding: 2em;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+}
+
+div {
+  margin-bottom: 0.6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label,
+input,
+button {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+label {
+  text-align: left;
+  width: 35%;
+  margin-right: 2%;
+}
+
+input {
+  flex: auto;
+}
+
+button {
+  width: 20%;
+  margin: 0 auto;
+  background-color: silver;
+}
+
+error-output {
+  font-size: 1em;
+  font-style: italic;
+  color: red;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #aa0404;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+  form {
+    margin-top: 1em;
+    margin-left: 10em;
+    max-width: 40%;
+    border: 1px solid rgb(167, 164, 164);
+    padding: 2em;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+  }
+}
+footer {
+  background: yellowgreen;
+  height: 20vh;
+}
